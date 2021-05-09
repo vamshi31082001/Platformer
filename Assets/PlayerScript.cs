@@ -54,18 +54,21 @@ public class PlayerScript : MonoBehaviour
         {
             FlipMovement(false);
             Movement(1);
-            anim.SetInteger("State", 1);
+             anim.SetInteger("State", 1);
+           // anim.SetTrigger("run");
             Jump();
         }
         else if(inputX<0 && isPlayerGrounded == true)
         {
             FlipMovement(true);
             Movement(-1);
+           // anim.SetTrigger("run");
             anim.SetInteger("State", 1);
             Jump();
         }
         else if(isPlayerGrounded == true)
         {
+            //anim.SetTrigger("jump");
             anim.SetInteger("State", 0);
             Jump();
         }
