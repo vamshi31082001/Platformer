@@ -44,7 +44,7 @@ public class PlayerScript : MonoBehaviour
     {
         Destroy(collision.gameObject);
         coins++;
-        coinstext.text = "coins" + coins;
+       // coinstext.text = "coins" + coins;
     }
 
     private void Update()
